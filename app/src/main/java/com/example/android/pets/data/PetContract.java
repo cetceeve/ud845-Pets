@@ -24,4 +24,15 @@ public final class PetContract {
         public static final int GENDER_MALE = 1;
         public static final int GENDER_FEMALE = 2;
     }
+
+    public static final String SQL_CREATE_PETS_TABLE =
+            "CREATE TABLE " + PetEntry.TABLE_NAME + " (" +
+                    PetEntry._ID + " INTEGER PRIMARY KEY AUTOINCREMENT," +
+                    PetEntry.COLUMN_PET_NAME + " TEXT NOT NULL," +
+                    PetEntry.COLUMN_PET_BREED + " TEXT," +
+                    PetEntry.COLUMN_PET_GENDER + " INTEGER NOT NULL," +
+                    PetEntry.COLUMN_PET_WEIGHT + " INTEGER NOT NULL DEFAULT 0);";
+
+    public static final String SQL_DELETE_ENTRIES =
+            "DROP TABLE IF EXISTS " + PetEntry.TABLE_NAME;
 }
