@@ -58,4 +58,13 @@
 
     <!-- Label for dropdown menu option if the pet is female [CHAR LIMIT=20] -->
     <string name="gender_female">Female</string>
+
+    <!-- Labels for Dummy Data -->
+    <string name="dummy_data_name">Toto</string>
+    <string name="dummy_data_breed">Terrier</string>
+
+    <!-- Labels for Toasts -->
+    <string name="toast_new_row">New row ID: </string>
+    <string name="editor_insert_pet_failed">Error with adding a new pet</string>
+    <string name="editor_insert_pet_successful">Successfully added new pet</string>
 </resources>
