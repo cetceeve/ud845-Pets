@@ -73,7 +73,17 @@ public class CatalogActivity extends AppCompatActivity implements LoaderManager.
         petListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
+                Intent editorIntent = new Intent(CatalogActivity.this, EditorActivity.class);
 
+                // Form the content URI that represents the specific pet that was clicked on,
+                // by appending the "id" (passed as input to this method) onto the
+                // {@link PetEntry#CONTENT_URI}.
+                // For example, the URI would be "content://com.example.android.pets/pets/2"
+                // if the pet with ID 2 was clicked on.
+                Uri currentUri = ContentUris.withAppendedId(PetEntry.CONTENT_URI, id);
+
+                editorIntent.setData(currentUri);
+                startActivity(editorIntent);
             }
         });
 
