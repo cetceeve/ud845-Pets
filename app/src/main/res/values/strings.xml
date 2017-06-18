@@ -70,6 +70,8 @@
     <string name="toast_new_row">New row ID: </string>
     <string name="editor_insert_pet_failed">Error with adding a new pet</string>
     <string name="editor_insert_pet_successful">Successfully added new pet</string>
+    <string name="editor_update_pet_failed">Error with updating a pet</string>
+    <string name="editor_update_pet_successful">Successfully updated pet</string>
 
     <!-- Title text for the empty view, which describes the empty dog house image [CHAR LIMIT=50] -->
     <string name="empty_view_title_text">It\'s a bit lonely here...</string>
