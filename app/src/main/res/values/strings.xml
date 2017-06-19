@@ -111,4 +111,10 @@
 
     <!-- Toast message to inform user that deleting all pets has failed -->
     <string name="catalog_delete_all_pets_failed">Error deleting all pets</string>
+
+    <!-- Text displayed in ListView when pet has no Name -->
+    <string name="catalog_unknown_name">Unknown Name</string>
+
+    <!-- Text displayed in ListView when pet has no Breed -->
+    <string name="catalog_unknown_breed">Unknown Breed</string>
 </resources>

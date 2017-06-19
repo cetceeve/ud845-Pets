@@ -61,13 +61,13 @@ public class PetCursorAdapter extends CursorAdapter {
         TextView nameTextView = (TextView) view.findViewById(R.id.name);
         TextView summaryTextView = (TextView) view.findViewById(R.id.summary);
 
-        String name = cursor.getString(cursor.getColumnIndexOrThrow(PetEntry.COLUMN_PET_NAME));
-        String breed = cursor.getString(cursor.getColumnIndexOrThrow(PetEntry.COLUMN_PET_BREED));
+        String petName = cursor.getString(cursor.getColumnIndexOrThrow(PetEntry.COLUMN_PET_NAME));
+        String petBreed = cursor.getString(cursor.getColumnIndexOrThrow(PetEntry.COLUMN_PET_BREED));
 
-        if (TextUtils.isEmpty(name)) { name = "Unknown Name"; }
-        if (TextUtils.isEmpty(breed)) { breed = "Unknown Breed"; }
+        if (TextUtils.isEmpty(petName)) { petName = context.getString(R.string.catalog_unknown_name); }
+        if (TextUtils.isEmpty(petBreed)) { petBreed = context.getString(R.string.catalog_unknown_breed); }
 
-        nameTextView.setText(name);
-        summaryTextView.setText(breed);
+        nameTextView.setText(petName);
+        summaryTextView.setText(petBreed);
     }
 }
